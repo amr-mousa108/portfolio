@@ -8,138 +8,156 @@
     <title>Amr Mousa Elewa</title>
 </head>
 <body>
-    <header >
+    <header>
         <a href="#" class="logo">Amr Mousa</a>
-        <nav class="navigation" >
+        <nav class="navigation">
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact" >Contact</a>
-
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+
     <section class="main">
         <div>
-            <h2>Hello,I am Amr Mousa<br /><span>Software Engineer</span></h2>
+            <h2>Hello, I am Amr Mousa<br /><span>Software Engineer</span></h2>
             <h3>I work hard to become a Back-End Developer</h3>
             <a href="#projects" class="main-btn">View my work</a>
             <div class="socialIcons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i>"</a>
+                <a href="https://www.linkedin.com/in/amr-mousa-0bab79371/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100008145466017&mibextid=kFxxJD"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://github.com/amarelewa"><i class="fa-brands fa-github"></i></a>
-
+                <a href="https://github.com/amr-mousa108"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
-    
+
+    <!-- Skills Section -->
     <section class="cards" id="skills">
         <h2 class="title">Skills</h2>
         <div class="content">
+
             <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-laptop-code"></i> 
-                </div>
+                <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
                 <div class="info">
                     <h3>Backend Developer</h3>
-                    <p>Backend Development refers to the server-side development of the web application</p>
+                    <p>Server-side development with C# and ASP.NET Core.</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="90">80%</div>
+                    </div>
                 </div>
             </div>
+
             <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-database"></i>
-                </div>
+                <div class="icon"><i class="fa-solid fa-database"></i></div>
                 <div class="info">
-                    <h3>Aware of Database</h3>
-                    <p>
-                        A database is an important component of any web application because it provides a central location for storing user information and business logic.
-                        In addition to this, it allows you to store complex data structures with minimal effort
-                    </p>
-                </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-building-user"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Object-oriented programming languages</h3>
-                         <p>
-                            This programming paradigm is important because it allows programmers
-                             to easily reuse complex code across programs.
-                         </p>
+                    <h3>Database Knowledge</h3>
+                    <p>SQL Server & MySQL for efficient data management and relationships.</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="100">100%</div>
                     </div>
                 </div>
             </div>
-        
+
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-building-user"></i></div>
+                <div class="info">
+                    <h3>OOP & C#</h3>
+                    <p>Write reusable and maintainable code using object-oriented programming.</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="95">95%</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
+
+    <!-- Projects Section -->
     <section class="projects" id="projects">
         <h2 class="title">Projects</h2>
         <div class="content">
+            <!-- User Management System -->
             <div class="project-card">
-                <div class="prject-image">
-                    <img src="https://th.bing.com/th/id/OIP.DLQLB5mMu_oByJRBSnluIQAAAA?w=286&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7" alt="photo" />
-                </div>
+                <div class="icon"><i class="fa-solid fa-user-gear"></i></div>
                 <div class="project-info">
-                    <p class="project-category">I have created the project in C#,Oops</p>
+                    <p class="project-category">A web app for managing users.</p>
                     <strong class="project-title">
-                        <span>Bank Account</span>
-                        <a href="https://github.com/amarelewa/Bank-Account "class="more-details">view the project</a>
+                        <span>User Management System</span>
+                        <a href="https://github.com/amr-mousa108/User_Managment_System" class="more-details">view the project</a>
                     </strong>
                 </div>
             </div>
+
+            <!-- Employee Management System -->
             <div class="project-card">
-                <div class="prject-image">
-<img src="https://th.bing.com/th/id/OIP.7MPqHQDOST3Y58563ctYwwHaD8?rs=1&pid=ImgDetMain" />
-                </div>
+                <div class="icon"><i class="fa-solid fa-users"></i></div>
                 <div class="project-info">
-                    <p class="project-category">I have created the project in C#,Oop</p>
+                    <p class="project-category">Manage departments and employees with CRUD operations and authentication using ASP.NET MVC & EF.</p>
                     <strong class="project-title">
-                        <span>Contact Manager App</span>
-                        <a href="https://github.com/amarelewa/Contact-Manager-App" class="more-details">view the project</a>
+                        <span>Employee Management System</span>
+                        <a href="https://github.com/amr-mousa108/Employees_managment_system" class="more-details">view the project</a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- Bank Account System -->
+            <div class="project-card">
+                <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="project-info">
+                    <p class="project-category">Manage bank accounts and transactions using C#.</p>
+                    <strong class="project-title">
+                        <span>Bank Account System</span>
+                        <a href="https://github.com/amr-mousa108/Bank-Account-system" class="more-details">view the project</a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- Calculator App -->
+            <div class="project-card">
+                <div class="icon"><i class="fa-solid fa-calculator"></i></div>
+                <div class="project-info">
+                    <p class="project-category">Simple Windows Forms calculator with basic arithmetic.</p>
+                    <strong class="project-title">
+                        <span>Simple Calculator</span>
+                        <a href="https://github.com/amr-mousa108/Desktop-app-with-C-" class="more-details">view the project</a>
                     </strong>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Contact Section -->
     <section class="cards contact" id="contact">
         <h2 class="title">Let’s work together</h2>
         <div class="content">
             <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
                 <div class="info">
-                    <h3>phone</h3>
+                    <h3>Phone</h3>
                     <p>+201227194282</p>
                 </div>
             </div>
             <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                 <div class="info">
                     <h3>Email</h3>
-                    <p>
-                       amarmousa1223@gmail.com
-                    </p>
+                    <p>amarmousa1223@gmail.com</p>
                 </div>
             </div>
-         
-          
         </div>
-
     </section>
-       
-    <footer class="footer">
-        <p class="footer-title">Copyrights@ <span>Amr Mousa</span></p>
-        <div class="socialIcons">
-            <a href="#"><i class="fa-brands fa-linkedin"></i>"</a>
-            <a href="https://www.facebook.com/profile.php?id=100008145466017&mibextid=kFxxJD"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://github.com/amarelewa"><i class="fa-brands fa-github"></i></a>
 
+    <footer class="footer">
+        <p class="footer-title">Copyrights@ <span>Amr Mousa</span> &copy; <span id="year"></span></p>
+        <div class="socialIcons">
+            <a href="https://www.linkedin.com/in/amr-mousa-0bab79371/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008145466017&mibextid=kFxxJD"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/amr-mousa108"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
-   
 
+    <script>
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
 </body>
 </html>

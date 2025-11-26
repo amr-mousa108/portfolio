@@ -8,16 +8,17 @@
     scroll-behavior:smooth;
 }
 
-header{
-    background-color:#f0f0f0;
-    width :100%;
-    position:fixed;
-    z-index:999;
-    justify-content:space-between;
-    display:flex;
-   align-items:center;
-   padding:10px 200px;
+header {
+    background-color: rgba(240, 240, 240, 0.9); /* ÔÝÇÝ */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.5s ease;
 }
+
+.navigation a:hover {
+    color: #601cfc;
+    border-bottom: 2px solid #601cfc;
+}
+
 .logo{
     text-decoration:none;
     text-transform:uppercase;
@@ -34,9 +35,7 @@ header{
     font-size:1.1em;
 
 }
-.navigation a:hover{
-   color:#601cfc;
-}
+
 section{
     padding:100px 200px;
 }
@@ -56,13 +55,26 @@ section{
     font-size:1.4em;
     font-weight:500;
 }
-.main h2 span{
-    display:inline-block;
-    color:#4e9eff;
-    font-size:3em;
-    font-weight:500;
-    margin-top:10px;
+    .main h2 span {
+        display: inline-block;
+        color: #4e9eff;
+        font-size: 3em;
+        font-weight: 500;
+        margin-top: 10px;
+        animation: fadeIn 2s ease-in-out forwards;
+    }
+  
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .main h3{
         color: #fff;
@@ -256,4 +268,71 @@ section{
 }
 @media (max-width:300px){
     body{font-size:10px;}
+}
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    width: 23em;
+    min-height: 14em;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    padding: 20px;
+    transition: 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+
+    .project-card .icon {
+        font-size: 4em;
+        color: #3a6cf4;
+        margin-bottom: 15px;
+    }
+
+.project-info .project-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.more-details {
+    margin-top: 5px;
+    text-decoration: none;
+    color: #601cfc;
+    font-weight: 600;
+}
+
+    .more-details:hover {
+        text-decoration: underline;
+    }
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    height: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    width: 0;
+    background-color: #3a6cf4;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: width 1s ease-in-out;
 }
